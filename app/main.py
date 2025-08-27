@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from contextlib import asynccontextmanager
 from .core.db import init_db
-from .routers import auth, habits
+from .routers import auth, habits, checkins
 
 
 @asynccontextmanager
@@ -13,6 +13,7 @@ app = FastAPI(title="Habit Tracker API", version="0.1.0", lifespan=lifespan)
 
 app.include_router(auth.router)
 app.include_router(habits.router)
+app.include_router(checkins.router)
 
 
 @app.get("/health")

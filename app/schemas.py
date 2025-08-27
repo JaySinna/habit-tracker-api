@@ -1,4 +1,5 @@
 from sqlmodel import SQLModel
+from datetime import date
 
 
 class UserCreate(SQLModel):
@@ -20,3 +21,20 @@ class HabitRead(SQLModel):
     id: int
     name: str
     period: str
+
+
+class CheckinCreate(SQLModel):
+    day: date
+
+
+class CheckinRead(SQLModel):
+    id: int
+    habit_id: int
+    day: date
+
+
+class HabitStats(SQLModel):
+    id: int
+    name: str
+    current_streak: int
+    longest_streak: int
