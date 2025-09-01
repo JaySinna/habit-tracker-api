@@ -6,7 +6,9 @@ This was developed as a portfolio project after completing my Software Developme
 ---
 
 ## 🚀 Live Demo
-- API Docs: [https://habit-tracker-api-jay.herokuapp.com/docs](https://habit-tracker-api-jay.herokuapp.com/docs)
+- API Docs: [https://jay-habit-tracker-api-ee2c081755c9.herokuapp.com/docs
+](https://jay-habit-tracker-api-ee2c081755c9.herokuapp.com/docs
+)
 
 ---
 
@@ -50,6 +52,8 @@ pip install -r requirements.txt
 
 uvicorn app.main:app --reload
 Then open: http://127.0.0.1:8000/docs
+```
 
-📖 Run Tests
-PYTHONPATH=. pytest -q
+## 📖 Run Tests
+
+```PYTHONPATH=. pytest -q```
